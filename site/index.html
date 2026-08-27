@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORRCF — five components every decision question ships with</title>
+<meta name="description" content="ORRCF: Options, Recommendation, Rationale, Confidence, Falsifier. A convention you can adopt this afternoon — every decision question ships with the reasoning attached, so answering streamlines to accept or override.">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--cream:#FDF9F1;--ink:#3A3228;--amber:#B45309;--amber-soft:#D97706;--line:#EADFC8;--card:#FFFDF8}
+  body{background:var(--cream);color:var(--ink);font:17px/1.65 Georgia,'Times New Roman',serif;padding:2.5rem 1.25rem 4rem}
+  .wrap{max-width:660px;margin:0 auto}
+  h1{font-size:3.4rem;letter-spacing:.35rem;color:var(--amber);font-family:-apple-system,"Segoe UI",Helvetica,sans-serif;font-weight:800}
+  .spell{font-size:1.05rem;color:var(--ink);margin:.4rem 0 2rem;font-style:italic}
+  .spell b{color:var(--amber)}
+  p{margin:1rem 0}
+  .five{margin:2rem 0;display:flex;flex-direction:column;gap:.9rem}
+  .comp{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:8px;padding:.9rem 1.1rem}
+  .comp b:first-child{font-family:-apple-system,"Segoe UI",sans-serif;color:var(--amber);letter-spacing:.02em}
+  .payoff{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.2rem 0;margin:2.2rem 0;font-size:1.12rem}
+  h2{font-family:-apple-system,"Segoe UI",sans-serif;font-size:1.15rem;color:var(--amber);margin:2.4rem 0 .8rem;letter-spacing:.03em}
+  pre{background:#1A1614;color:#EADFC8;border-radius:10px;padding:1.1rem 1.2rem;overflow-x:auto;font:13.5px/1.55 ui-monospace,'SF Mono',Menlo,monospace;position:relative}
+  .copybtn{position:absolute;top:.6rem;right:.6rem;background:var(--amber);color:#fff;border:none;border-radius:6px;padding:.3rem .7rem;font:600 12px/1 -apple-system,sans-serif;cursor:pointer}
+  .example{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.1rem 1.3rem;font-size:.95rem}
+  .example h3{font-family:-apple-system,sans-serif;font-size:.95rem;margin-bottom:.5rem}
+  .example .ans{border-top:1px dashed var(--line);margin-top:.8rem;padding-top:.8rem}
+  footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--line);font-size:.9rem;color:#7A6A52}
+  footer a{color:var(--amber)}
+  a{color:var(--amber)}
+  @media(max-width:480px){h1{font-size:2.4rem;letter-spacing:.2rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>ORRCF</h1>
+<p class="spell"><b>O</b>ptions · <b>R</b>ecommendation · <b>R</b>ationale · <b>C</b>onfidence · <b>F</b>alsifier — always said in full, five words.</p>
+
+<p>When someone hands you a decision — and especially when an AI hands you
+one — the question should carry everything needed to answer it. ORRCF is a
+convention for that: <strong>Every decision question ships with five
+components.</strong> You can adopt it this afternoon, in any Markdown file,
+with no tooling and no buy-in to anything else.</p>
+
+<div class="five">
+  <div class="comp"><b>Options</b> — the real option space, laid out. Diversity
+  that resists anchoring: If only one path is shown, the question is a
+  formality, not a decision.</div>
+  <div class="comp"><b>Recommendation</b> — an attributed lean. The asker shows
+  their hand and signs it, so the answerer reacts to a position instead of
+  reconstructing one.</div>
+  <div class="comp"><b>Rationale</b> — not a justification after the fact: The
+  explicit, inspectable argument connecting the options to the lean, staked
+  in the record where it can be audited, challenged, and built on.</div>
+  <div class="comp"><b>Confidence</b> — stated at the end, <em>with its
+  reasons</em>. A number without reasons is performative confidence, and
+  performative confidence corrodes trust in every future question.</div>
+  <div class="comp"><b>Falsifier</b> — the evidence, observation, failed
+  prediction, or changed constraint that would cause the recommendation to
+  be revised. Every recommendation carries the conditions of its own
+  revision.</div>
+</div>
+
+<div class="payoff">A question built this way <strong>streamlines to accept
+or override</strong> — one word suffices when the reasoning carries you,
+and the reasoning is on record when it doesn't. Delegation becomes
+delegation-with-a-handle: You can reclaim any decision you handed off,
+because the reasoning came with it.</div>
+
+<h2>Steal this</h2>
+<p>The convention in its native Markdown form — copy it into any file:</p>
+<pre id="steal"><button class="copybtn" onclick="navigator.clipboard.writeText(document.getElementById('steal').innerText.replace('Copy',''))">Copy</button>### QST: Should we …?
+- Status: unanswered
+- Why asking: …
+
+**Options**
+
+- **A — …**
+- **B — …**
+- **C — …**
+
+**Recommendation**: (by NAME, DATE)
+
+**A.** *Rationale*: … *Confidence*: Medium — because …
+*Falsifier*: …
+
+**ANS:** (by …)
+</pre>
+
+<h2>A worked example</h2>
+<div class="example">
+<h3>### QST: Should we use refresh tokens?</h3>
+<p>- Status: answered<br>- Why asking: Impacts the security-vs-UX tradeoff for mobile sessions</p>
+<p><b>Options</b> — <b>A</b>: refresh tokens, 7-day expiry · <b>B</b>: long-lived access tokens · <b>C</b>: session cookies, mobile re-login weekly</p>
+<p><b>Recommendation</b>: (by the AI collaborator) <b>A.</b> <em>Rationale</em>: B widens the stolen-token blast radius; C's weekly re-login contradicts the mobile-first requirement stated in the brief; A costs one refresh flow and contains both risks. <em>Confidence</em>: Medium-high — the security argument is standard, but the team hasn't built token rotation before, so the implementation cost is the uncertainty. <em>Falsifier</em>: If session analytics show median session gaps under one day, C's simplicity wins and this recommendation should be revisited.</p>
+<p class="ans"><b>ANS:</b> (by the human) Accepted — A, 7-day expiry. The falsifier is noted; we'll check the session-gap number at the first analytics review.</p>
+</div>
+
+<p>That answer took one line — because the question did the work. That is
+the entire convention.</p>
+
+<footer>
+<p>ORRCF is part of <a href="https://adrs.systems/">ADRs4AI</a> — a
+git-native toolkit for keeping the reasoning attached to the work. The
+convention stands alone: Use it in a wiki, a pull request, an email.
+Copy freely (<a href="https://github.com/ADRs4AI/orrcf">source &amp;
+license</a>).</p>
+</footer>
+
+</div>
+</body>
+</html>
