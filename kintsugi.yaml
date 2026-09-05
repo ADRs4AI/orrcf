@@ -132,3 +132,15 @@ overrides:
     skip: true
     reason: Per-repo by design (handbook step 8). (Tender 5, transition 2026-09-05, HQ dispatch 2026-09-05-2208)
     decided: '2026-09-05T22:23:20Z'
+  README.md:
+    skip: true
+    reason: 'Both are orrcf''s real product content, verified by reading before deciding: README is the
+      stealable ORRCF surface itself; CHANGELOG is the page''s own founding history (2026-08-27, template''s
+      first Use-this-template generation). Not staleness. (Tender 5, 2026-09-05)'
+    decided: '2026-09-05T22:23:25Z'
+  CHANGELOG.md:
+    skip: true
+    reason: 'Both are orrcf''s real product content, verified by reading before deciding: README is the
+      stealable ORRCF surface itself; CHANGELOG is the page''s own founding history (2026-08-27, template''s
+      first Use-this-template generation). Not staleness. (Tender 5, 2026-09-05)'
+    decided: '2026-09-05T22:23:25Z'
