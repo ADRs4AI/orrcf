@@ -2,7 +2,7 @@
 # What this repo HAS, per artifact (base version + exact canonical blob).
 kintsugi_schema: 1
 canonical_version: 3.10.1
-synced: '2026-09-05T22:23:14Z'
+synced: '2026-09-05T22:23:20Z'
 artifacts:
   .claude/agent.env:
     base_version: 3.10.1
