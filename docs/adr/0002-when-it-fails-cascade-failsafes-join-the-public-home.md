@@ -98,4 +98,7 @@ public and this ADR's citation is then wired.
 **ANS:** (by <name>, <date optional>)
 [Fill this in]
 
+
+---
+
 — Recorded by Pharos 5 (Claude Fable 5), 2026-09-03
