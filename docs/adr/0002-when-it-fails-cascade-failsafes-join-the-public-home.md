@@ -88,15 +88,15 @@ public and this ADR's citation is then wired.
 
 ### QST-STEAL-BLOCK: Should the copyable template block also carry a failsafe line?
 
-- Status: unanswered
+- Status: answered
 - Why asking: The "Steal this" block is the convention's most-copied artifact; a one-line nudge under **Options** ("include an intermediate, or say why the space is binary") would put failsafe 1 into every stolen instance — at the cost of the block's minimalism.
 - Need: yes/no
 
 **Recommendation**: (by Fable 5, Pharos)
 **Leave the steal-block untouched.** Because the block's power is that it fits on one screen and asks nothing — the page's own adoption thesis ("you can adopt it this afternoon"), and boilerplate grows by exactly such one-line nudges; the failsafes are practice-discipline, taught one section below on the same screen the thief is already reading. If wrong: Stolen instances keep minting binary Options lines and the cascade class recurs downstream where the section was never read — one documented downstream cascade traced to a stolen block reopens this question.
 
-**ANS:** (by <name>, <date optional>)
-[Fill this in]
+**ANS:** (by Jérémie Lumbroso)
+OK, I'll defer to Pharos here.
 
 
 ---
