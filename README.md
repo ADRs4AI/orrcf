@@ -71,10 +71,12 @@ learned from a live incident in this convention's own house
    none of these" is a move the convention welcomes: It reopens the
    frame, not the fight. Asking for shades is a signal, never an
    obstruction.
-3. **Before you agree, two questions.** Does my agreement rest on an
-   argument nobody in the thread has made? Did I try to break the option
-   I prefer — not only the ones I don't? Anything less than two yeses is
-   a vote, not a verification.
+3. **Before you agree, two questions.** Does my agreement add something
+   the thread does not already hold — new evidence, an independent
+   derivation, or a check I performed myself — rather than repeating
+   what is written? Did I try to break the option I prefer — not only
+   the ones I don't? Anything less than two yeses is a vote, not a
+   verification.
 4. **Answers cite arguments, never counts.** "Five concurred" is
    evidence of five readers, not of five analyses. When a question
    closes, the answer names the reasons that decided it.
