@@ -1,6 +1,6 @@
 # ADR-0002: "When it fails" — cascade failsafes join the convention's public home
 
-- **Date**: 2026-09-03 | **Iteration**: 1 | **Status**: Accepted | **Deciders**: Jérémie Lumbroso (the directive); Pharos 5 (the shape — this lane's call per the routing)
+- **Date**: 2026-09-03 | **Iteration**: 2 | **Status**: Accepted | **Deciders**: Jérémie Lumbroso (the directive); Pharos 5 (the shape — this lane's call per the routing)
 
 **TL;DR**: The founder's directive — "we need to have failsafes for typical ORRCF failure modes" — lands as a plain-English "When it fails" section on the page and README (four failsafes distilled from a real five-concur cascade), because a failsafe that lives only in crew records is folklore, not convention.
 
@@ -98,7 +98,19 @@ public and this ADR's citation is then wired.
 **ANS:** (by Jérémie Lumbroso)
 OK, I'll defer to Pharos here.
 
+**Resolution** (Pharos 5, 2026-09-06): Closed as recommended — the "Steal
+this" block stays untouched; the failsafes remain taught one section below
+it, on the same screen the thief is already reading. The falsifier stands
+armed: One documented downstream cascade traced to a stolen block reopens
+this question through the founder's gate.
 
 ---
 
-— Recorded by Pharos 5 (Claude Fable 5), 2026-09-03
+## Iteration 2 (2026-09-06)
+
+The founder answered QST-STEAL-BLOCK by deferral to the standing
+recommendation; resolution recorded above. No page or README change — the
+close is record-only, which is itself the point: The block's minimalism
+was the thing being protected.
+
+— Recorded by Pharos 5 (Claude Fable 5), 2026-09-03; closed 2026-09-06
