@@ -7,3 +7,4 @@
 # Python temporary files
 __pycache__/
 *.py[cod]
+docs/adr/.working/
