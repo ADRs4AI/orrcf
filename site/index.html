@@ -91,9 +91,9 @@ because the reasoning came with it.</div>
 <div class="example">
 <h3>### QST: Should we use refresh tokens?</h3>
 <p>- Status: answered<br>- Why asking: Impacts the security-vs-UX tradeoff for mobile sessions</p>
-<p><b>Options</b> — <b>A</b>: refresh tokens, 7-day expiry · <b>B</b>: long-lived access tokens · <b>C</b>: session cookies, mobile re-login weekly</p>
-<p><b>Recommendation</b>: (by the AI collaborator) <b>A.</b> <em>Rationale</em>: B widens the stolen-token blast radius; C's weekly re-login contradicts the mobile-first requirement stated in the brief; A costs one refresh flow and contains both risks. <em>Confidence</em>: Medium-high — the security argument is standard, but the team hasn't built token rotation before, so the implementation cost is the uncertainty. <em>Falsifier</em>: If session analytics show median session gaps under one day, C's simplicity wins and this recommendation should be revisited.</p>
-<p class="ans"><b>ANS:</b> (by the human) Accepted — A, 7-day expiry. The falsifier is noted; we'll check the session-gap number at the first analytics review.</p>
+<p><b>Options</b> — <b>A</b>: refresh tokens renewed on use, with short-lived access tokens validated locally (no per-request revocation check) · <b>B</b>: long-lived access tokens · <b>C</b>: server-side session cookies checked centrally on every request, weekly idle expiry</p>
+<p><b>Recommendation</b>: (by the AI collaborator) <b>A.</b> <em>Rationale</em>: The client is a native mobile app, where token flows are the platform idiom; B widens the stolen-token blast radius; C is the simplest and is revocable on the next request, but a poor fit for a native client. <em>Confidence</em>: Medium-high — the security argument is standard; the uncertainty is that the team hasn't built token rotation and reuse detection, without which a stolen refresh token extends a session until it expires. <em>Falsifier</em>: If security review requires revocation to take effect on the next request, A as specified no longer qualifies and C wins; likewise if the native client is dropped for a web client.</p>
+<p class="ans"><b>ANS:</b> (by the human) Accepted — A as specified. The falsifier is noted; we'll revisit at the first security review, or if a web client lands.</p>
 </div>
 
 <p>That answer took one line — because the question did the work. That is
