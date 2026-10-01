@@ -7,6 +7,7 @@
 <meta name="description" content="ORRCF: Options, Recommendation, Rationale, Confidence, Falsifier. A convention you can adopt this afternoon — every decision question ships with the reasoning attached, so answering streamlines to accept or override.">
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
+  .revnote{font-size:.82em;color:#777;margin-top:.7em}
   :root{--cream:#FDF9F1;--ink:#3A3228;--amber:#B45309;--amber-soft:#D97706;--line:#EADFC8;--card:#FFFDF8}
   body{background:var(--cream);color:var(--ink);font:17px/1.65 Georgia,'Times New Roman',serif;padding:2.5rem 1.25rem 4rem}
   .wrap{max-width:660px;margin:0 auto}
@@ -98,6 +99,8 @@ because the reasoning came with it.</div>
 
 <p>That answer took one line — because the question did the work. That is
 the entire convention.</p>
+
+<p class="revnote">Revised September 30, 2026 — the original example read: Options — <b>A</b>: refresh tokens, 7-day expiry · <b>B</b>: long-lived access tokens · <b>C</b>: session cookies, mobile re-login weekly; Falsifier: If session analytics show median session gaps under one day, C's simplicity wins and this recommendation should be revisited. Readers found that condition did not separate the options as specified, so the revision names the ground the choice turns on. The full reasoning is preserved in the repository's decision record ADR-0005.</p>
 
 <h2 id="when-it-fails">When it fails</h2>
 <p>The convention's known failure mode is agreement that looks like
